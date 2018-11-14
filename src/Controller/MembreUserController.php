@@ -1,8 +1,8 @@
 <?php
 
-namespace Controller;
+namespace App\Controller;
 
-use Controller\UtilisateurController as Utilisateur;
+use App\Controller\UtilisateurController as Utilisateur;
 
 /**
  *

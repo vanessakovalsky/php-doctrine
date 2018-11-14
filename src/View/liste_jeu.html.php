@@ -8,7 +8,9 @@ foreach($chunk_reponse as $array_jeu){
     ?>
     <div class="col-sm-3">
     <?php
-    include('./src/View/voir_jeu.html.php');
+    if($jeu->getName() !== null) {
+        include('./src/View/voir_jeu.html.php');
+    }
     ?>
     </div>
     <?php

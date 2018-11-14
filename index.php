@@ -1,6 +1,6 @@
 <?php
 
-use Controller\RouterController;
+use App\Controller\RouterController;
 
 /**
  * Created by PhpStorm.

@@ -1,10 +1,10 @@
 <?php
 
-namespace Controller;
+namespace App\Controller;
 
-use Controller\JeuController as Jeu;
-use Controller\AdminUserController as AdminUser;
-use Controller\MembreUserController as MembreUser;
+use App\Controller\JeuController as Jeu;
+use App\Controller\AdminUserController as AdminUser;
+use App\Controller\MembreUserController as MembreUser;
 
 class RouterController {
 

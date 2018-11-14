@@ -1,7 +1,7 @@
 <?php
-namespace Controller;
+namespace App\Controller;
 
-use Entity\boardgame;
+use App\Entity\boardgame as boardgame;
 
 /**
  *
@@ -27,7 +27,7 @@ class JeuController
     }
   }
 
-  public function AjoutJeu(JeuController$jeu, PDO $db){
+  public function AjoutJeu($jeu, PDO $db){
     // Envoyer un formulaire
     if(empty($jeu->nom_jeu)){
       $formulaire = include_once('./src/View/formulaire_ajout_jeu.html.php');
@@ -58,7 +58,7 @@ class JeuController
   }
 
   public function ListeJeu($db){
-      $reponse_voir_jeu = $db->getRepository('Entity\boardgame')->findAll();
+      $reponse_voir_jeu = $db->getRepository('App\Entity\boardgame')->findAll();
       $liste = include_once('./src/View/liste_jeu.html.php');
       return $liste;
   }
