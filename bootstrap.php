@@ -14,7 +14,7 @@ require_once "vendor/autoload.php";
 
 // Create a simple "default" Doctrine ORM configuration for Annotations
 $isDevMode = true;
-$config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/src/Entity"), $isDevMode);
+$config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/src"), $isDevMode);
 
 //$config = new \Doctrine\DBAL\Configuration();
 

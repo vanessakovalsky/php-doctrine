@@ -1,8 +1,7 @@
 <?php
 namespace Controller;
 
-use Model\JeuModel;
-use \PDO;
+use Entity\boardgame;
 
 /**
  *
@@ -59,7 +58,7 @@ class JeuController
   }
 
   public function ListeJeu($db){
-      $reponse_voir_jeu = $db->getRepository('boardgame')->findAll();
+      $reponse_voir_jeu = $db->getRepository('Entity\boardgame')->findAll();
       $liste = include_once('./src/View/liste_jeu.html.php');
       return $liste;
   }

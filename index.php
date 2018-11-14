@@ -1,4 +1,7 @@
 <?php
+
+use Controller\RouterController;
+
 /**
  * Created by PhpStorm.
  * User: vdavid2
@@ -9,8 +12,8 @@ require_once('bootstrap.php');
 require('src/Autoloader.php');
 Autoloader::register();
 
-
-$router = new Controller\RouterController();
+$router = new RouterController();
 $content = $router->route($_SERVER['REQUEST_METHOD'],$_GET['actions'], $entityManager);
+
 
 include_once('src/View/template.php');
